@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 import streamlit as st
 import os
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets("HUGGINGFACE_API_KEY")
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["HUGGINGFACE_API_KEY"]
 chat_history = []
 
 def load_and_split_pdf(pdf_path):
