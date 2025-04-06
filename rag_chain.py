@@ -10,6 +10,8 @@ from langchain.memory import ConversationBufferMemory
 from dotenv import load_dotenv
 import streamlit as st
 import os
+import torch
+torch.classes.__path__ = []
 
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["HUGGINGFACE_API_KEY"]
 chat_history = []
