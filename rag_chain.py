@@ -35,7 +35,7 @@ def get_rag_chain(vectorstore):
     retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
     llm = HuggingFaceEndpoint(
-        repo_id="mistralai/Mistral-7B-Instruct-v0.1",
+        repo_id="google/flan-t5-small",
         max_length=128,
         temperature=0.1,
     )
