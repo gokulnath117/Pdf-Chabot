@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-HUGGING_FACE_API = os.getenv("HUGGINGFACE_API_KEY")
+HUGGING_FACE_API = st.secrets("HUGGINGFACE_API_KEY")
 
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = HUGGING_FACE_API
 chat_history = []
