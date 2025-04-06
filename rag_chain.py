@@ -8,6 +8,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 from dotenv import load_dotenv
+import streamlit as st
 import os
 
 load_dotenv()
